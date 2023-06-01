@@ -35,6 +35,5 @@ app.get("/api/whoami", (req, res) => {
    "language": req.headers['accept-language'],
     "software": req.headers['user-agent']
                  }
-  res.json(client)
-  console.log(client)
+  res.send(client)
 })
